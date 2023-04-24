@@ -1,0 +1,42 @@
+.topo {
+    --background: #480a2d;
+    --color: #f2f2f2;
+    padding-left: 8%;
+    text-transform: uppercase;
+    padding-top: 10%;
+}
+
+.conteudo {
+    --background: #fff url(../../../assets/imgApp/FundoArt3.png) no-repeat center center / cover;
+    text-align: center;
+}
+
+.logo {
+    width: 75%;
+    margin: 5% 13%;
+}
+
+.descricao {
+    background: #ecc09d98;
+    color: #480a2d;
+    margin: 0 5%;
+    text-align: justify;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.descricao h2 {
+    font-size: 1.3em;
+}
+
+.login {
+    margin-top: 15%;
+}
+
+.login ion-button {
+    --background: #ecc09d9f;
+    --border-radius: 5px;
+    color: #480a2d;
+    font-weight: bold;
+    font-size: 0.9em;
+}

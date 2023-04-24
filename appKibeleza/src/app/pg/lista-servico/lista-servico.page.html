@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar class="topo">
+    <ion-title> Serviços </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="conteudo">
+
+    <!-- Default Searchbar -->
+  <ion-searchbar (ionInput)="getItems($event)"> </ion-searchbar>
+
+  <ion-row class="servicoItem" *ngFor="let servico of servicos">
+    <ion-col size="4">
+      <img src="../../../assets/imgApp/servico03.png" alt="{{servico.NomeServico}}">
+    </ion-col>
+    
+    <ion-col size="8">
+      <h2> {{servico.NomeServico}} </h2>
+      <p> {{servico.DescricaoServico}} </p>
+      <a href="tabs/pg/liservico1/{{servico.idServico}}"> 
+        <ion-icon name="arrow-forward-circle-outline"> </ion-icon>
+      </a>
+    </ion-col>
+  </ion-row>
+</ion-content>

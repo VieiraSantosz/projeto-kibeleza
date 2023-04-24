@@ -1,0 +1,34 @@
+.topo {
+    --background: #480a2d;
+    --color: #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10%;
+}
+
+.conteudo {
+    --background: #fff url(../../../assets/imgApp/FundoArt3.png) no-repeat center center / cover;
+    text-align: center;
+}
+
+.logo {
+    width: 70%;
+    margin-top: 5%;
+}
+
+.descricao {
+    background: #ecc09d98;
+    color: #480a2d;
+    font-weight: bolder;
+    margin: 0 5%;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+.fachada {
+    margin: 0 5%;
+}
+
+.redeSocial img {
+    width: 75%;
+}

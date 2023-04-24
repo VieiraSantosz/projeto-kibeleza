@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar class="topo">
+    <ion-title> {{dados[0]?.NomeServico}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="conteudo">
+
+  <ion-row>
+    <ion-slides pager="true">
+      <ion-slide>
+        <ion-img [src]="servidorUrl.getUrl()+dados[0]?.FotoServico1" 
+                   alt="{{dados[0]?.NomeServico}}">
+        </ion-img>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-img [src]="servidorUrl.getUrl()+dados[0]?.FotoServico2" 
+                 alt="{{dados[0]?.NomeServico}}">
+        </ion-img>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-img [src]="servidorUrl.getUrl()+dados[0]?.FotoServico3" 
+                 alt="{{dados[0]?.NomeServico}}">
+        </ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-row class="descricao">
+    <ion-col size="12">
+      <p> {{dados[0]?.DescricaoServico}} </p>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row>
+    <ion-col class="reservar" offset-xs="2" size="8">
+      <a href="/tabs/pg/reservar/{{dados[0]?.idServico}}">
+      <ion-button expand="block"> reservar </ion-button>
+      </a>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="redeSocial">
+    <ion-col size="3">
+      <a href="https://pt-br.facebook.com">
+        <img src="../../../assets/imgApp/facebook.svg" alt="Facebook">
+      </a>
+    </ion-col>
+  
+    <ion-col size="3">
+      <a href="https://www.instagram.com">
+        <img src="../../../assets/imgApp/instagram.svg" alt="Instagram">
+      </a>
+    </ion-col>
+  
+    <ion-col size="3">
+      <a href="https://twitter.com">
+        <img src="../../../assets/imgApp/twitter.svg" alt="Twitter">
+      </a>
+    </ion-col>
+  
+    <ion-col size="3">
+      <a href="https://wa.me/55119999999">
+        <img src="../../../assets/imgApp/WhatsVerde.svg" alt="WhatsApp">
+      </a>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

@@ -1,0 +1,39 @@
+.topo {
+    --background: #480a2d;
+    --color: #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10%;
+}
+
+.conteudo {
+    --background: #fff url(../../../assets/imgApp/FundoArt3.png) no-repeat center center / cover;
+    text-align: center;
+}
+
+.titulo {
+    margin-top: 5%;
+}
+
+.titulo h1 {
+    text-transform: uppercase;
+    color: #480a2d;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.reservar {
+    --background: #480a2d;
+    --border-radius: 5px;
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.redeSocial img {
+    width: 75%;
+    margin-top: 20%;
+}
+
+

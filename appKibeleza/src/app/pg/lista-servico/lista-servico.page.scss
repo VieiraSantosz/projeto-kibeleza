@@ -1,0 +1,48 @@
+.topo {
+    --background: #480a2d;
+    --color: #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10%;
+}
+
+.conteudo {
+    --background: #fff url(../../../assets/imgApp/FundoArt3.png) no-repeat center center / cover;
+    text-align: center;
+}
+
+.servicoItem {
+    text-align: left;
+    background: rgba(0, 0, 0, 0.404);
+}
+
+.servicoItem:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.servicoItem h2 {
+    margin-top: 0;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #480a2d;
+}
+
+.servicoItem img {
+    border: solid 1.5px #480a2d;
+    border-radius: 10%;
+}
+
+.servicoItem p {
+    font-size: 0.8em;
+    color: #480a2d;
+    padding-right: 5%;
+}
+
+.servicoItem a {
+    float: right;
+    margin-right: 5%;
+    margin-top: -5%;
+    font-size: 1.5em;
+    color: #bc3161;
+}

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar class="topo">
+    <ion-title> {{this.dadosUsuario.getNomeUsuario()}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="conteudo">
+
+  <ion-img class="logo" [src]="this.servidorUrl.getUrl()+this.dadosUsuario.getFotoUsuario()" 
+                        alt="{{this.dadosUsuario.getNomeUsuario()}}">
+  </ion-img>
+
+  <ion-row>
+    <ion-col class="descricao" size="11">
+      <h2> <b>Email:</b> {{this.dadosUsuario.getEmailUsuario()}} </h2>
+      <h2> <b>Status:</b> {{this.dadosUsuario.getStatusUsuario()}} </h2>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="login">
+    <ion-col offset-xs="2" size="8">
+      <ion-button expand="block" (click)="sairLogin()"> Voltar </ion-button>
+    </ion-col>
+
+    <ion-col offset-xs="2" size="8">
+      <ion-button expand="block" href="tabs/pg/lista-servico"> Serviços </ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

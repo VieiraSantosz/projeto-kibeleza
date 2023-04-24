@@ -1,0 +1,47 @@
+.conteudo {
+    --background: #fff url(../../../assets/imgApp/FundoArt.png) no-repeat center center / cover;
+    text-align: center;
+}
+
+.logo {
+    width: 70%;
+    margin-top: 20%;
+}
+
+.frase h1 {
+    color: #480a2d;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: -2%;
+}
+
+.fundo {
+    margin-top: 20%;
+}
+
+.fundo ion-item {
+    --background: #ecc09d9f;
+    --border-radius: 10px;
+}
+
+.fundo ion-icon {
+    color: #480a2d;
+}
+
+.fundo ion-input {
+    color: #480a2d;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.login {
+    margin-top: 18%;
+}
+
+.login ion-button {
+    --background: #ecc09d9f;
+    --border-radius: 5px;
+    color: #480a2d;
+    font-weight: bold;
+    font-size: 0.9em;
+}

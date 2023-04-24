@@ -1,0 +1,37 @@
+<ion-content class="conteudo">
+
+  <img class="logo" src="../../../assets/imgApp/LogoKiBeleza.svg" alt="Logo Kibeleza">
+
+  <ion-row>
+    <ion-col class="frase" size="12">
+      <h1> Seja Bem Vindo! </h1>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="fundo">
+    <ion-col offset-xs="1" size="10">
+      <ion-item>
+        <ion-icon name="person" slot="start"> </ion-icon>
+        <ion-input type="email" placeholder="E-mail:" autofocus="true" [(ngModel)]="email"> </ion-input>
+      </ion-item>
+    </ion-col>
+
+    <ion-col offset-xs="1" size="10">
+      <ion-item>
+        <ion-icon name="lock-closed" slot="start"> </ion-icon>
+        <ion-input type="password" placeholder="Senha:" autofocus="true" [(ngModel)]="senha"> </ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="login">
+    <ion-col offset-xs="2" size="8">
+      <ion-button expand="block" (click)="logar()"> Entrar </ion-button>
+    </ion-col>
+
+    <ion-col offset-xs="2" size="8">
+      <ion-button expand="block" href="tabs/pg/cadastro"> Cadastro </ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

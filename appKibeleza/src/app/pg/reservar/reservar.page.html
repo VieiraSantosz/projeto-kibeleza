@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar class="topo">
+    <ion-title> {{dados[0]?.NomeServico}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="conteudo">
+
+    <ion-slides pager="true">
+      <ion-slide>
+        <ion-img [src]="servidorUrl.getUrl()+dados[0]?.FotoServico1" 
+                   alt="{{dados[0]?.NomeServico}}">
+        </ion-img>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-img [src]="servidorUrl.getUrl()+dados[0]?.FotoServico2" 
+                 alt="{{dados[0]?.NomeServico}}">
+        </ion-img>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-img [src]="servidorUrl.getUrl()+dados[0]?.FotoServico3" 
+                 alt="{{dados[0]?.NomeServico}}">
+        </ion-img>
+      </ion-slide>
+    </ion-slides>
+
+  <form (ngSubmit)="cadReserva()" [formGroup]="reserva">
+  <ion-row>
+    <ion-col class="titulo" size="12">
+      <h1> Solicitar Serviço </h1>
+    </ion-col>
+  
+    <ion-col size="12">
+      <ion-item>
+        <ion-label> Profissional </ion-label>
+        <ion-select [(ngModel)]="idFunc" formControlName="codFunc" cancelText="Fechar" okText="Confirmar"> 
+          <ion-select-option *ngFor="let func of funcionario" value="{{func.idFuncionario}}"> {{func.NomeFuncionario}} </ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+
+    <ion-col size="12">
+      <ion-item>
+        <ion-datetime 
+          locale="pt-BR"
+          min="{{dataMin}}"
+          minute-values="0,15,30,45"
+          [(ngModel)]="dataHora"
+          formControlName="dataReserva">
+        </ion-datetime>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-button class="reservar" type="submit" expand="full"> reservar </ion-button>
+    </ion-col>
+  </ion-row>
+  </form>
+
+  <ion-row class="redeSocial">
+    <ion-col size="3">
+      <a href="https://pt-br.facebook.com">
+        <img src="../../../assets/imgApp/facebook.svg" alt="Facebook">
+      </a>
+    </ion-col>
+  
+    <ion-col size="3">
+      <a href="https://www.instagram.com">
+        <img src="../../../assets/imgApp/instagram.svg" alt="Instagram">
+      </a>
+    </ion-col>
+  
+    <ion-col size="3">
+      <a href="https://twitter.com">
+        <img src="../../../assets/imgApp/twitter.svg" alt="Twitter">
+      </a>
+    </ion-col>
+  
+    <ion-col size="3">
+      <a href="https://wa.me/55119999999">
+        <img src="../../../assets/imgApp/WhatsVerde.svg" alt="WhatsApp">
+      </a>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
