@@ -1,0 +1,760 @@
+/* Estilo do Topo */
+
+
+/* 
+CLASS - começar com o ponto
+ ID - começar com a: #
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:ital,wght@1,200&display=swap');
+
+/* 
+font-family: 'Lobster', cursive;
+font-family: 'Nunito', sans-serif;
+*/
+
+.site {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    background: url(../img/white_wall_hash.png);
+}
+
+.topoSocial {
+    background: #480a2d;
+}
+
+.topoRedeSocial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topoRedeSocial h2 {
+    color: #ffffff;
+    font: 1.2em;
+}
+
+.topoRedeSocial ul {
+    display: flex;
+}
+
+.topoRedeSocial ul li {
+    margin: 0 5px;
+    padding: 10px 0;
+}
+
+.topoRedeSocial ul li a {
+    padding: 10px;
+    margin: 5px;
+    background: rgb(255, 255, 255);
+}
+
+
+/* FIM DO TOPO */
+
+
+/* MENU */
+
+.topoMenu {
+    background: #e7b3a4;
+}
+
+.menuLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuLogo nav ul {
+    display: flex;
+}
+
+.menuLogo nav ul li {
+    padding: 10px 10px;
+    margin: 5px;
+    background: #401230;
+    border-radius: 10px;
+}
+
+.menuLogo nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menuLogo nav ul li:hover {
+    background: #ffffff;
+}
+
+.menuLogo nav ul li a:hover {
+    color: #000000;
+}
+
+
+/* FIM DO MENU */
+
+
+/* MENU FIXO */
+
+.topofixo {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    animation: fadeIn1s ease-in-out;
+    background: #e7b3a4cc;
+}
+
+
+/* FIM MENU FIXO */
+
+
+/* BANNER */
+
+.banner img {
+    width: 100%;
+}
+
+.banner .slick-prev::before,
+.banner .slick-next::before {
+    font-size: 40px;
+    opacity: 50;
+    color: #f2f2f2;
+}
+
+.banner .slick-prev {
+    left: 10px;
+    z-index: 1;
+}
+
+.banner .slick-next {
+    right: 30px;
+}
+
+.banner .slick-dots {
+    bottom: 10px;
+}
+
+.banner .slick-dots li button::before {
+    font-size: 10px;
+    color: #f2f2f2;
+    opacity: 200px;
+}
+
+.banner .slicl-dots li.slick-active button::before {
+    opacity: 1;
+    color: #f2f2f2;
+}
+
+
+/* FIM DO BANNER */
+
+
+/* SOBRE */
+
+.sobre {
+    padding: 50px 0;
+}
+
+.sobre h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #480a2d;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.sobre div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sobre div article {
+    width: 45%;
+}
+
+.sobre div article p {
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 30px;
+    color: #480a2d;
+    border-radius: 10px 0 20px 0;
+    padding: 15px 30px 107px 30px;
+}
+
+.sobre div article img {
+    width: 100%;
+    border-radius: 0 10px 0 20px;
+}
+
+
+/* FIM SOBRE */
+
+
+/* GALERIA */
+
+.galeria {
+    background: #480a2d;
+    padding: 40px 0;
+}
+
+.galeria .slick-slide {
+    margin: 0 20px;
+}
+
+.galeria .slick-prev::before,
+.galeria .slick-next::before {
+    font-size: 25px;
+    opacity: 50;
+    color: #f2f2f2;
+}
+
+.galeria .slick-prev {
+    left: 10px;
+    z-index: 1;
+}
+
+.galeria .slick-next {
+    right: 30px;
+}
+
+
+/* FIM GALERIA */
+
+
+/* SERVIÇOS */
+
+.Serviços {
+    background: #8c375f;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Serviços div h2 {
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid;
+    padding: 10px 0;
+}
+
+.Serviços div div article h3 {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.Serviços div div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.Serviços div div article {
+    background: #f2f2f2;
+    width: 21%;
+    padding: 15px;
+}
+
+.Serviços div div article img {
+    width: 100%;
+    border: solid thin #8c375f;
+}
+
+.Serviços div div article p {
+    margin-left: 10%;
+    margin-top: 5%;
+    line-height: 1.6em;
+    padding-bottom: 15%;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.Serviços div div article a {
+    color: #8c375f;
+    text-decoration: none;
+    background: #e7b3a4;
+    padding: 5px 20px;
+    border: solid thin #8c375f;
+    float: right;
+    float: inline-end;
+    display: flex;
+}
+
+.Serviços div div article a :hover {
+    background: #8c375f;
+    color: #e7b3a4;
+    border: solid thick #e7b3a4;
+}
+
+
+/* FIM DO SERVIÇO */
+
+
+/* SERVIÇOS-CONTEÚDO*/
+
+.servicoConteudo {
+    margin-top: 50px;
+    border-bottom: solid;
+}
+
+.servicoConteudo h2 {
+    text-transform: uppercase;
+    color: #3a102b;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid;
+    padding: 10px 0;
+}
+
+.servicoConteudo div article {
+    background: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 1px;
+}
+
+.servicoConteudo div article:nth-child(even) {
+    /* Alternar as cores */
+    background: #e7b3a4;
+}
+
+.conteudo {
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicoConteudo div article div img {
+    width: 25%;
+    border: solid thin #8c375f;
+    margin-right: 5%;
+    border-radius: 5%;
+}
+
+.servicoConteudo div article div h3 {
+    text-align: center;
+    padding-bottom: 15%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.servicoConteudo div article div p {
+    text-align: justify;
+    line-height: 2em;
+    padding-bottom: 15%;
+    font-size: 1.2em;
+}
+
+/* FIM DO SERVIÇO-CONTEÚDOS */
+
+
+/* DESTAQUE */
+
+.Destaque {
+    background: #401230;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.Destaque div {
+    background: url(../img/destaque.png) no-repeat;
+    border-radius: 27px;
+}
+
+.Destaque div a img {
+    margin: 146px 0;
+}
+
+
+/* FIM DO DESTAQUE */
+
+
+/* EQUIPE */
+
+.Equipe {
+    background: #f2f2f2;
+}
+
+.Equipe h2 {
+    text-transform: uppercase;
+    color: #8c375f;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid;
+    padding: 10px 0;
+}
+
+.Equipe div div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.Equipe div div article {
+    width: 15%;
+    padding: 15px;
+}
+
+.Equipe div div article img {
+    width: 100%;
+}
+
+.Equipe div div article h2,
+.Equipe div div article h3 {
+    text-transform: uppercase;
+    color: #8c375f;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: none;
+    padding: 10px 0;
+}
+
+
+/* FIM DA EQUIPE */
+
+
+/* RODAPÉ */
+
+.Rodapé {
+    background: #8c375f;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.Rodapé div {
+    background: #f2f2f2;
+    border-radius: 30px;
+}
+
+.Rodapé div a img {
+    margin: 10px 0;
+    width: 30%;
+}
+
+.Rodapé div ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 406px;
+}
+
+.Rodapé div h2 {
+    color: #401230;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.direitos {
+    background: #3a102b!important;
+    text-align: center;
+}
+
+.direitos h2 {
+    color: #f2f2f2;
+    padding: 0 10px;
+}
+
+
+/* FIM DO RODAPÉ */
+
+
+/* ##### PÁGINA CONTATO ##### */
+
+.formulario h2 {
+    color: #3a102b;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.formulario h4 {
+    color: #3a102b;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.caixaform {
+    border: solid 5px #3a102b;
+    border-radius: 20px 0 20px 10px;
+    padding: 3%;
+    margin-bottom: 2%;
+    background: rgba(238, 238, 238, 0.733);
+}
+
+.caixaform form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divForm {
+    width: 45%;
+}
+
+.caixaform form div div input[type="text"],
+.caixaform form div div input[type="email"],
+.caixaform form div div input[type="tel"],
+.caixaform form div div input[type="submit"],
+.caixaform form div div textarea {
+    width: 98%;
+    padding: 1em;
+    color: #3a102b;
+    background: #f2f2f2;
+    border: solid 2px #3a102b;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.caixaform form div div input[type="text"],
+.caixaform form div div input[type="email"],
+.caixaform form div div input[type="tel"] {
+    margin-bottom: 3em;
+}
+
+.caixaform form div div textarea {
+    height: 230px;
+    resize: none;
+}
+
+.caixaform form div div input[type="submit"] {
+    width: 30%;
+    float: right;
+    margin-right: -12px;
+    cursor: pointer;
+    background: #3a102b;
+    border: solid 2px #f2f2f2;
+    color: #f2f2f2;
+    border-radius: 10px 0 10px 5px;
+}
+
+.caixaform form div div input[type="submit"]:hover {
+    background: #f2f2f2;
+    border: solid 2px #3a102b;
+    color: #3a102b;
+}
+
+
+/* ##### FIM DA PÁGINA CONTATO ##### */
+
+
+/* MOBILE ATÉ 600 PX */
+
+@media not all and (max-width:600px) {
+    .abrir-menu,
+    .fechar-menu {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    /* TOPO */
+    .banner {
+        display: none;
+    }
+    .menu {
+        background: #8c375f81;
+        padding: 1%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        margin: 0;
+        top: 0;
+        max-width: 350px;
+        width: 50%;
+        right: -350px;
+        transition: right 0.3s ease-out;
+    }
+    .menuLogo nav ul {
+        flex-direction: column;
+    }
+    .menuLogo nav ul li {
+        margin: 2.5% 0;
+    }
+    .menuLogo nav ul li {
+        padding: 20px 10px;
+    }
+    .menuLogo nav ul li a {
+        padding: 20px 10px;
+    }
+    .menu-ativo .menu {
+        right: 0px;
+    }
+    .fechar-menu {
+        background: url(../img/cancel.png);
+        background-size: cover;
+        padding: 20px;
+        border: 0;
+        display: block;
+        margin-bottom: 5%;
+    }
+    .abrir-menu {
+        background: url(../img/menu.png);
+        background-size: cover;
+        padding: 20px;
+        border: 0;
+        display: block;
+        margin-right: 10px;
+    }
+    .topoRedeSocial ul {
+        margin-right: 30px;
+    }
+    /* FIM DO TOPO */
+    /* SOBRE */
+    .sobre div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre div article {
+        width: 90%;
+    }
+    .sobre div article p {
+        font-size: 1.2em;
+        margin-bottom: 2%;
+    }
+    .sobre div article img {
+        width: 98%;
+    }
+    /* FIM DO SOBRE */
+    /* SERVIÇO */
+    .Serviços {
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
+    .Serviços div div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Serviços div div article {
+        width: 95%;
+        padding: 15px;
+        margin-bottom: 2%;
+    }
+    .Serviços div div article img {
+        width: 100%;
+        border: solid thin #8c375f;
+    }
+    .Serviços div div article p {
+        font-size: 1.8em;
+    }
+    .Serviços div div article a {
+        font-size: 1.2em;
+        padding: 15px 25px;
+    }
+    /* FIM DO SERVIÇO */
+    /* EQUIPE */
+    .Equipe {
+        margin-top: 25px;
+    }
+    .Equipe div div {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .Equipe div div article {
+        width: 30%;
+    }
+    /* FIM DA EQUIPE */
+    /* RODAPÉ */
+    .Rodapé {
+        padding: 25px 0;
+    }
+    .Rodapé div {
+        border-radius: 15px;
+    }
+    .Rodapé div a img {
+        margin: 10px 0;
+    }
+    .Rodapé div ul {
+        padding: 0 10px;
+    }
+    /* FIM DO RODAPÉ */
+}
+
+
+/* FIM DO MOBILE ATÉ 600 PX */
+
+
+/* MOBILE DE 601 PX ATÉ 900 PX */
+
+@media (max-width:900px) {
+    .topoRedeSocial ul {
+        margin-right: 30px;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menuLogo {
+        flex-direction: column;
+    }
+    .menuLogo nav ul {
+        justify-content: space-around;
+    }
+    .sobre {
+        padding: 50px 0;
+    }
+    .sobre div {
+        justify-content: space-around;
+    }
+    .sobre div article {
+        width: 45%;
+    }
+    .sobre div article p {
+        font-size: 1.1em;
+        padding: 15px 30px 23px 30px;
+    }
+    .sobre div article img {
+        width: 98%;
+    }
+    .Serviços div div {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .Serviços div div article {
+        width: 44%;
+        margin-bottom: 2%;
+    }
+    .Rodapé div ul {
+        padding: 10px;
+    }
+}
+
+
+/* FIM DO MOBILE DE 601 PX ATÉ 900 PX */
+
+
+/* MOBILE DE 901 PX ATÉ 1200 PX */
+
+@media (max-width:1200px) {
+    .topoRedeSocial ul {
+        display: flex;
+        margin-right: 30px;
+    }
+    .sobre {
+        padding: 50px 0;
+    }
+}
+
+
+/* FIM DO MOBILE DE 901 PX ATÉ 1200 PX */
